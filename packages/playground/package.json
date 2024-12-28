@@ -6,7 +6,8 @@
     "dev": "vite ."
   },
   "dependencies": {
-    "@tato30/vue-pdf": "*"
+    "@tato30/vue-pdf": "*",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@types/node": "^18.16.3",

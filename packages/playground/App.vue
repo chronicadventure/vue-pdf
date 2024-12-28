@@ -1,14 +1,9 @@
-<!-- eslint-disable unused-imports/no-unused-imports -->
-<!-- Use this component to play with the main components -->
-<script setup lang="ts">
-import pdf14 from '@samples/issue126.pdf';
-import { VuePDF, usePDF } from '@tato30/vue-pdf';
-
-const { pdf } = usePDF(pdf14)
-</script>
-
 <template>
-  <div>
-    <VuePDF :pdf="pdf" annotation-layer />
+  <div id="app">
+    <nav>
+      <button @click="$router.push('/')">Home</button>
+      <button @click="$router.push('/pdf')">PDF</button>
+    </nav>
+    <router-view></router-view>
   </div>
 </template>
